@@ -12,5 +12,7 @@ Repozitář, do kterého ukládám různé skripty, které mě napadnou a přijd
 |   +-- Indexace Seznam
 |   +-- Site Google
 |   +-- Site Seznam
++-- RStudio
+|   +-- Stažení dat z GSC
 +-- README.md
 ```
