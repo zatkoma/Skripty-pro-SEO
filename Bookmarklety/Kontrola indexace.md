@@ -10,3 +10,7 @@ javascript:if(/https?:\/\/.+/.test(window.location.href)){window.open('https://w
 ```JavaScript
 javascript:if(/https?:\/\/.+/.test(window.location.href)){window.open('https://search.seznam.cz/?q=info:' + encodeURIComponent(window.location.href), '_blank')}
 ```
+
+## Credits:
+
+Tyto bookmarklety vytvořili kluci v Collabimu. :)
