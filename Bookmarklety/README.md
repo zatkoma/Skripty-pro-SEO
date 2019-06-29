@@ -10,3 +10,4 @@ V podstatě jde o záložku, kterou si umístíte do prohlížeče a následně 
 * Kontrola indexace - Seznam
 * Site:domena a vyhledávací dotaz - Google
 * Site:domena a vyhledávací dotaz - Seznam
+* Whois - CZ
