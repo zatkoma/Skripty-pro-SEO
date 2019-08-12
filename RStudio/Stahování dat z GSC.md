@@ -7,6 +7,8 @@ Každý občas potřebuje stáhnout nějaké data ze Search Console. Můžete vy
 library(googleAuthR)
 library(searchConsoleR)
 
+scr_auth()
+
 sc_params_from <- "2019-01-01"
 sc_params_to <- "2019-06-25"
 sc_params_property <- "domena.cz"
@@ -19,5 +21,8 @@ sc_page <- search_analytics(sc_params_property, sc_params_from, sc_params_to, di
 ## Stažení stránek + dotazů:
 sc_pagequery <- search_analytics(sc_params_property, sc_params_from, sc_params_to, dimensions = c("page", "query"), searchType = "web", rowLimit = sc_row_limit)
 
-
+## Smazání brandových dotazů
+sc_pagequeries <- sc_pagequery %>%
+  filter(!str_detect(query, 'martin|žatkovič|martin žatkovič|martin zatkovic'))
+  
 ```
