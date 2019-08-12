@@ -22,7 +22,7 @@ sc_page <- search_analytics(sc_params_property, sc_params_from, sc_params_to, di
 sc_pagequery <- search_analytics(sc_params_property, sc_params_from, sc_params_to, dimensions = c("page", "query"), searchType = "web", rowLimit = sc_row_limit)
 
 ## Smazání brandových dotazů
-sc_pagequeries <- sc_pagequery %>%
+sc_pagequery_non_brand <- sc_pagequery %>%
   filter(!str_detect(query, 'martin|žatkovič|martin žatkovič|martin zatkovic'))
   
 ```
