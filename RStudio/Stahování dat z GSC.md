@@ -15,11 +15,23 @@ sc_params_property <- "domena.cz"
 sc_row_limit <- 100000
 
 ## Stažení stránek:
-sc_page <- search_analytics(sc_params_property, sc_params_from, sc_params_to, dimensions = c("page"), searchType = "web", rowLimit = sc_row_limit)
+sc_page <- search_analytics(sc_params_property, 
+  sc_params_from, 
+  sc_params_to, 
+  dimensions = c("page"), 
+  searchType = "web", 
+  rowLimit = sc_row_limit)
 
 
 ## Stažení stránek + dotazů:
-sc_pagequery <- search_analytics(sc_params_property, sc_params_from, sc_params_to, dimensions = c("page", "query"), searchType = "web", rowLimit = sc_row_limit)
+sc_pagequery <- search_analytics(sc_params_property, 
+  sc_params_from, 
+  sc_params_to, 
+  dimensions = c("page", "query"), 
+  searchType = "web", 
+  rowLimit = sc_row_limit)
+  
+  
 
 ## Smazání brandových dotazů
 sc_pagequery_non_brand <- sc_pagequery %>%
