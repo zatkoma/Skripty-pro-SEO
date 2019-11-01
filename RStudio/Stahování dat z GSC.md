@@ -21,6 +21,14 @@ sc_page <- search_analytics(sc_params_property,
   dimensions = c("page"), 
   searchType = "web", 
   rowLimit = sc_row_limit)
+  
+## Případně bez proměnných:
+sc_page <- search_analytics("https://www.domena.cz, 
+  "2019-09-01", 
+  "2019-10-31", 
+  dimensions = c("page"), 
+  searchType = "web", 
+  rowLimit = 100000)
 
 
 ## Stažení stránek + dotazů:
