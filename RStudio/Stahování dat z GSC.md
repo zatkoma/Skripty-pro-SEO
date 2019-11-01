@@ -23,7 +23,7 @@ sc_page <- search_analytics(sc_params_property,
   rowLimit = sc_row_limit)
   
 ## Případně bez proměnných:
-sc_page <- search_analytics("https://www.domena.cz, 
+sc_page <- search_analytics("https://www.domena.cz", 
   "2019-09-01", 
   "2019-10-31", 
   dimensions = c("page"), 
